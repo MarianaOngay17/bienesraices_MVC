@@ -1,0 +1,19 @@
+{
+    "name": "m-ongay/bienesraices_poo",
+    "description": "Creando un proyecto con POO",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Mariana",
+            "email": "marianaongay.01@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^3.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\" : "./classes"
+        }
+    }
+}
