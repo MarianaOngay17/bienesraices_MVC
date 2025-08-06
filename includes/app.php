@@ -7,6 +7,6 @@ require __DIR__ . '/../vendor/autoload.php';
 //conectar a bd
 $db = conectarDB();
 
-use App\ActiveRecord;
+use Model\ActiveRecord;
 ActiveRecord::setDB($db);
 

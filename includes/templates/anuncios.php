@@ -1,6 +1,6 @@
 <?php
 
-use App\Propiedad;
+use Model\Propiedad;
 
 
 if($_SERVER['SCRIPT_NAME'] === '/anuncios.php'){
