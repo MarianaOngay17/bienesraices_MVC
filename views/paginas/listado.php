@@ -1,17 +1,4 @@
-<?php
-
-use Model\Propiedad;
-
-
-if($_SERVER['SCRIPT_NAME'] === '/anuncios.php'){
-    $propiedades = Propiedad::all();
-}else{
-    $propiedades = Propiedad::get(3);
-}
-
-?>
-     
-     <div class="contenedor-anuncios">
+  <div class="contenedor-anuncios">
         <?php foreach($propiedades as $propiedad): ?>
             <div class="anuncio">
                 <img loading="lazy" src="imagenes/<?php echo $propiedad->imagen;?>" alt="anuncio">
@@ -36,12 +23,10 @@ if($_SERVER['SCRIPT_NAME'] === '/anuncios.php'){
                         </li>
                     </ul>
 
-                    <a href="anuncio.php?id=<?php echo $propiedad->id;?>" class="boton-amarillo-block">
+                    <a href="/propiedad?id=<?php echo $propiedad->id;?>" class="boton-amarillo-block">
                         Ver Propiedad
                     </a>
                 </div> <!--.contenido-anuncio-->
             </div> <!--.anuncio-->
         <?php endforeach;?>
         </div> <!--.contenedor-anuncios-->
-
-<?php mysqli_close($db);  ?>
