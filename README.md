@@ -6,3 +6,5 @@ composer install
 npm i
 
 composer update despues de registrar cambios en el composer.json
+
+composer require phpmailer/phpmailer
